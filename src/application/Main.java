@@ -11,7 +11,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			Parent root = (Parent)FXMLLoader.load(getClass().getResource("Signin.fxml"));
+			Parent root = (Parent)FXMLLoader.load(getClass().getResource("main.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			stage.setScene(scene);

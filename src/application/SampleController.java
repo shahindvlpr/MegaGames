@@ -16,7 +16,7 @@ public class SampleController {
 	
 	
 	public void switchToScene1(ActionEvent event) throws IOException {
-		root = FXMLLoader.load(getClass().getResource("Signin.fxml"));
+		root = FXMLLoader.load(getClass().getResource("main.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
@@ -24,11 +24,19 @@ public class SampleController {
 		
 	}
 	public void switchToScene2(ActionEvent event) throws IOException {
-		root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+		root = FXMLLoader.load(getClass().getResource("sign-up.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();	
+	}
+	
+	public void signin_button(ActionEvent event) throws IOException{
+		root = FXMLLoader.load(getClass().getResource("sign-in.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	
